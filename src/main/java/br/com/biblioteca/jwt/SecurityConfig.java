@@ -1,5 +1,6 @@
 package br.com.biblioteca.jwt;
 
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @EnableMethodSecurity
+@AllArgsConstructor
 public class SecurityConfig {
 
     private UserDetailsService userDetailsService;
