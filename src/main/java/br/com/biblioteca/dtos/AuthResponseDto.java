@@ -1,6 +1,8 @@
 package br.com.biblioteca.dtos;
 
+import lombok.Data;
 
+@Data
 public class AuthResponseDto {
     private String accessToken;
 
